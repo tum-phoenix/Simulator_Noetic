@@ -22,6 +22,7 @@ sudo apt-get install ros-noetic-teb-local-planner
 cd ~/.gazebo/
 git clone https://github.com/osrf/gazebo_models.git models
 
+cp -r world/models/. ~/.gazebo/models
 sudo chmod 777 ~/.gazebo/models
 sudo chmod 777 ~/.gazebo/models/*
 ```
@@ -34,5 +35,6 @@ rosrun racecar_description keyboard_teleop.py
 
 ### 4: Reference:
 	https://gitee.com/zeende/racecar_sim
+	https://github.com/droneslab/audubon_gazebo.git
 
 # Simulator_Noetic

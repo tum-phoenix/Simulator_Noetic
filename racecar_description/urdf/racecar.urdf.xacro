@@ -48,10 +48,10 @@ limitations under the License.
 
   <!-- chassis_length is measured along the x axis, chassis_width
        along the y axis, and chassis_height along the z axis. -->
-  <xacro:property name="chassis_length" value="0.135"/>
-  <xacro:property name="chassis_width" value="0.36"/>
-  <xacro:property name="chassis_height" value="0.0021"/>
-  <xacro:property name="chassis_mass" value="1.26244"/>
+  <xacro:property name="chassis_length" value="0.258"/>
+  <xacro:property name="chassis_width" value="0.168"/>
+  <xacro:property name="chassis_height" value="0.01"/>
+  <xacro:property name="chassis_mass" value="2.788"/>
 
   <!-- battery_dist is the distance between the inner edges of the
        batteries. battery_comp_depth is the battery compartment depth.
@@ -61,10 +61,10 @@ limitations under the License.
   <xacro:property name="battery_dist" value="0.065"/>
   <xacro:property name="battery_comp_depth" value="0.02"/>
   <xacro:property name="battery_comp_angle" value="0.34906585"/>
-  <xacro:property name="battery_length" value="0.1"/>
-  <xacro:property name="battery_width" value="0.05"/>
-  <xacro:property name="battery_height" value="0.03"/>
-  <xacro:property name="battery_mass" value="0.05025"/>
+  <xacro:property name="battery_length" value="0.16"/>
+  <xacro:property name="battery_width" value="0.047"/>
+  <xacro:property name="battery_height" value="0.024"/>
+  <xacro:property name="battery_mass" value="0.5025"/>
 
   <!-- hub_dia and tire_dia are the diameters of the hub and tire,
        respectively. hex_hub_depth is the distance that the hex hub is

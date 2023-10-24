@@ -89,7 +89,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://silverstone_track/silverstone_track.stl</uri>
+              <uri>model://silverstone_track/Silverstone_map.png</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -110,7 +110,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://silverstone_track/silverstone_track.stl</uri>
+              <uri>model://silverstone_track/Silverstone_map.png</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>

@@ -35,8 +35,12 @@ class OdometryNode:
 
     def sub_robot_pose_update(self, msg):
         # Find the index of the racecar
+
+        if msg != None:
+            rospy.logdebug_once("msg: %s", msg.name)
         try:
             arrayIndex = msg.name.index('racecar::base_footprint')
+            rospy.logdebug("%s", arrayIndex)
         except ValueError as e:
             # Wait for Gazebo to startup
             pass
@@ -44,6 +48,8 @@ class OdometryNode:
             # Extract our current position information
             self.last_received_pose = msg.pose[arrayIndex]
             self.last_received_twist = msg.twist[arrayIndex]
+            w = self.last_received_pose.orientation.w
+            rospy.logdebug("w: %s", w)
         self.last_recieved_stamp = rospy.Time.now()
 
     def timer_callback(self, event):

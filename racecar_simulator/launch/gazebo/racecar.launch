@@ -7,9 +7,9 @@
     <arg name="headless" default="false"/>
     <arg name="debug" default="false"/>
     <!--模型车的起点放置位置-->
-    <arg name="x_pos" default="0"/>
-    <arg name="y_pos" default="0"/>
-    <arg name="z_pos" default="0.0"/>
+    <arg name="x_pos" default="-3.154772"/>
+    <arg name="y_pos" default="-5.651154"/>
+    <arg name="z_pos" default="-0.053386"/>
 
 	<!--运行gazebo仿真环境-->
 	<include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -18,7 +18,7 @@
         	<arg name="paused" value="$(arg paused)"/>
         	<arg name="use_sim_time" value="$(arg use_sim_time)"/>
         	<arg name="headless" value="$(arg headless)"/>
-		<arg name="world_name" value="$(find racecar_worlds)/worlds/IMS_track.world"/>
+		<arg name="world_name" value="$(find racecar_worlds)/worlds/monza_track.world"/>
                <!-- .world文件的地址-->
     </include>
 
@@ -52,7 +52,7 @@
 	<node pkg="racecar_description" type="servo_commands.py" name="servo_commands" output="screen"/>
 
 	<!--Static tf-->
-	<node pkg="tf" type="static_transform_publisher" name="odom_to_map" args="0 0 0 0 0 0 1  /base_footprint /base_link 100" />
+	<node pkg="tf" type="static_transform_publisher" name="odom_to_map" args="0 0 0 0 0 0 1  /odom /map 100" />
 	<node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 1  /map /odom 100" />
 </launch>
 

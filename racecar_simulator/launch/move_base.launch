@@ -14,7 +14,7 @@
    </node>
 
 
-   	<node name="map_server" pkg="map_server" type="map_server" args="$(find racecar_simulator)/map/IMS_track.yaml" output="screen">
+   	<node name="map_server" pkg="map_server" type="map_server" args="$(find racecar_simulator)/map/monza_track.yaml" output="screen">
                 <param name="frame_id" value="map"/>
     </node>
 
