@@ -1,6 +1,6 @@
 image: monza_track.pgm
 resolution: 0.050000
-origin: [-58.600000, -69.800000, 0.000000]
+origin: [-44.200000, -77.800000, 0.000000]
 negate: 0
 occupied_thresh: 0.65
 free_thresh: 0.196
