@@ -32,7 +32,7 @@ sudo chmod 777 ~/.gazebo/models/*
 roslaunch racecar_simulator racecar_gazebo_rviz.launch
 rosrun racecar_description keyboard_teleop.py
 ```
-## 3.1: if rviz cannot work:
+#### 3.1: if rviz cannot work:
 With another commands build the rviz environment:
 ```shell
 roslaunch racecar_simulator racecar.launch
@@ -40,7 +40,7 @@ source ./devel/setup.bash
 rosrun rviz rviz
 rosrun racecar_description keyboard_teleop.py
 ```
-### 5: Reference:
+### 4: Reference:
 	https://gitee.com/zeende/racecar_sim
 	https://github.com/droneslab/audubon_gazebo.git
 
