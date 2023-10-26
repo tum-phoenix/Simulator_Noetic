@@ -50,10 +50,11 @@
 
 
 	<node pkg="racecar_description" type="servo_commands.py" name="servo_commands" output="screen"/>
-
+	<node name="odom_imu" pkg="racecar_description" type="odom_pub.py"/>
 	<!--Static tf-->
 	<node pkg="tf" type="static_transform_publisher" name="odom_to_map" args="0 0 0 0 0 0 1  /odom /map 100" />
 	<node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 1  /map /odom 100" />
+	
 </launch>
 
 

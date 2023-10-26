@@ -12,10 +12,10 @@
     </node-->
 
     <node name="rviz" pkg="rviz" type="rviz"
-          args="-d $(find racecar_simulator)/rviz/racecar_urdf.rviz" required="true"/>
+          args="-d $(find racecar_simulator)/rviz/racecar.rviz" required="true"/>
 
 
     <!--node name="gazebo_odometry_node" pkg="racecar_description" type="gazebo_odometry.py"/-->
-    <node name="odom_imu" pkg="racecar_description" type="odom_pub.py"/>
+    
 
 </launch>
