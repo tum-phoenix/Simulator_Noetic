@@ -22,9 +22,12 @@ sudo apt-get install ros-noetic-teb-local-planner
 cd ~/.gazebo/
 git clone https://github.com/osrf/gazebo_models.git models
 
-cp -r world/models/. ~/.gazebo/models
-sudo chmod 777 ~/.gazebo/models
-sudo chmod 777 ~/.gazebo/models/*
+# go back to the Simulator_Noetic folder
+cd -
+
+cp -r racecar_worlds/models/ ~/.gazebo/models
+chmod 777 ~/.gazebo/models
+chmod 777 ~/.gazebo/models/*
 ```
 ### 3: Simulator launch:
 

@@ -45,6 +45,7 @@ if __name__=="__main__":
   status = 0
 
   try:
+    print(banner)
     while(1):
        key = getKey()
        if key in keyBindings.keys():
